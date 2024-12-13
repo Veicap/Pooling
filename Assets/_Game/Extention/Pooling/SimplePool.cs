@@ -102,7 +102,7 @@ public class Pool
         for (int i = 0; i < amount; i++)
         {
             // Tạo ra các object sau đó đưa nó vào pool 
-            Despawn(Spawn(Vector3.zero, Quaternion.identity));
+            Despawn(GameObject.Instantiate(prefab, parent));
         }
     }
     // Lay phan tử từ pool
